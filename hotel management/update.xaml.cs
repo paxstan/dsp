@@ -108,5 +108,29 @@ namespace hotel_management
                 update_remark.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void fetch_user(object sender, RoutedEventArgs e)
+        {
+            if (update_user.Text == "USER NAME")
+            {
+                MessageBox.Show("EMPTY USER NAME");
+            }
+        }
+
+        private void update_call(object sender, RoutedEventArgs e)
+        {
+            if (update_user.Text == "USER NAME")
+            {
+                MessageBox.Show("EMPTY USER NAME");
+            }
+            if ((update_name.Text == "NAME") || (update_desig.Text == "DESIGNATION") || (update_new_user.Text == "USER NAME") || (update_pass.Text == "PASSWORD"))
+            {
+                MessageBox.Show("EMPTY CREDENTIALS");
+            }
+            if ((admin_pre.IsChecked == false) && (front_pre.IsChecked == false) && (fb_pre.IsChecked == false) && (hk_pre.IsChecked == false) && (store_pre.IsChecked == false))
+            {
+                MessageBox.Show("EMPTY PREVILEGE");
+            }
+        }
     }
 }

@@ -96,7 +96,7 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="checkout_pay" Margin="0,0,47,268" TextWrapping="Wrap" Text="PAYMENT MODE" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Bottom" ToolTip="payment mode" HorizontalAlignment="Right" Width="190" IsKeyboardFocusedChanged="pay_keyfocus" >
+        <TextBox x:Name="checkout_pay" Margin="0,0,47,278.076" TextWrapping="Wrap" Text="PAYMENT MODE" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Bottom" ToolTip="payment mode" HorizontalAlignment="Right" Width="190" IsKeyboardFocusedChanged="pay_keyfocus" >
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
                     <GradientStop Color="#FFABADB3" Offset="0.05"/>
@@ -144,9 +144,9 @@
         <TextBox x:Name="textBox1_Copy2" HorizontalAlignment="Right" Margin="0,0,241.634,92.778" TextWrapping="Wrap" Text="INVOICE NUMBER:" Width="118.672" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4" Height="29" VerticalAlignment="Bottom"/>
         <TextBox x:Name="textBox1_Copy3" HorizontalAlignment="Right" Margin="0,0,241.634,141.488" TextWrapping="Wrap" Text="TOTAL AMOUNT :" Width="101.681" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4" Height="29" VerticalAlignment="Bottom"/>
         <TextBox x:Name="textBox1_Copy4" HorizontalAlignment="Right" Margin="0,0,241.634,182.586" TextWrapping="Wrap" Text="POST CHARGE:" Width="89.779" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4" Height="29" VerticalAlignment="Bottom"/>
-        <Button x:Name="checkin_but" Content="Button" Height="61.332" Margin="0,0,23.234,6.959" VerticalAlignment="Bottom" Template="{DynamicResource CHECKOUT}" HorizontalAlignment="Right" Width="185.856"/>
+        <Button x:Name="checkout_but" Content="Button" Height="61.332" Margin="0,0,23.234,6.959" VerticalAlignment="Bottom" Template="{DynamicResource CHECKOUT}" HorizontalAlignment="Right" Width="185.856" Click="checkout"/>
         <Button x:Name="checkin_but_Copy" Content="Button" Height="61.332" Margin="0,0,241.634,10" VerticalAlignment="Bottom" Template="{DynamicResource plitbill}" HorizontalAlignment="Right" Width="128.672"/>
-        <TextBox x:Name="checkout_ph" HorizontalAlignment="Left" Margin="107,92,0,0" TextWrapping="Wrap" Text="PHONE NUMBER" Width="190" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter Phone Number" IsKeyboardFocusedChanged="info_ph_keyfocus" >
+        <TextBox x:Name="checkout_ph" HorizontalAlignment="Left" Margin="107,92,0,0" TextWrapping="Wrap" Text="PHONE NUMBER" Width="190" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter Phone Number" IsKeyboardFocusedChanged="info_ph_keyfocus" KeyDown="phno_fetch_keydown" >
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
                     <GradientStop Color="#FFABADB3" Offset="0.05"/>

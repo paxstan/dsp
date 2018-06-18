@@ -261,5 +261,21 @@ namespace hotel_management
                 checkout_invoice.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void phno_fetch_keydown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                MessageBox.Show("enter is pressed");
+            }
+        }
+
+        private void checkout(object sender, RoutedEventArgs e)
+        {
+            if((checkout_pay.Text=="PAYMENT MODE")||(checkout_tid1.Text=="TRANSACTION ID")||(checkout_post_ch.Text=="POST CHARGE"))
+            {
+                MessageBox.Show("EMPTY FIELDS");
+            }
+        }
     }
 }

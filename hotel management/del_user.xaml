@@ -34,11 +34,11 @@
         </TextBox>
         <Image x:Name="image3" HorizontalAlignment="Left" Margin="170.777,40.078,0,0" Width="58.78" Source="icons8-user-96.png" Height="48.593" VerticalAlignment="Top"/>
         <Grid Margin="124.091,119.192,89.802,105.684" Background="#FFBDBB9F">
-            <TextBlock x:Name="textBlock" Margin="52.247,50.514,53.88,31.124" TextWrapping="Wrap" FontWeight="Bold" FontSize="20" Background="#FFEEE89D"/>
             <Label x:Name="label" Content="DETAILS" Height="40.514" Margin="300.425,10,326.552,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="28"/>
+            <TextBox x:Name="details_fetch" Margin="24.796,84.457,29.52,34.646" TextWrapping="Wrap" IsReadOnly="True"/>
         </Grid>
-        <Button x:Name="button" Content="Button" Height="58.39" Margin="403.292,0,400.025,24.491" VerticalAlignment="Bottom" Template="{DynamicResource DELETE_BUT}"/>
-        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Right" Height="74.114" Margin="0,40.078,127.354,0" VerticalAlignment="Top" Width="169.807" Template="{DynamicResource FETCH}"/>
+        <Button x:Name="delete_but" Content="Button" Height="58.39" Margin="403.292,0,400.025,24.491" VerticalAlignment="Bottom" Template="{DynamicResource DELETE_BUT}" Click="del_user1"/>
+        <Button x:Name="user_fetch" Content="Button" HorizontalAlignment="Right" Height="74.114" Margin="0,40.078,127.354,0" VerticalAlignment="Top" Width="169.807" Template="{DynamicResource FETCH}" Click="user_name_fetch"/>
 
     </Grid>
 </Page>

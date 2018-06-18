@@ -38,5 +38,21 @@ namespace hotel_management
                 del_user_user.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void user_name_fetch(object sender, RoutedEventArgs e)
+        {
+            if(del_user_user.Text=="USER NAME")
+            {
+                MessageBox.Show("EMPTY USER NAME");
+            }
+        }
+
+        private void del_user1(object sender, RoutedEventArgs e)
+        {
+            if (del_user_user.Text == "USER NAME")
+            {
+                MessageBox.Show("EMPTY USER NAME");
+            }
+        }
     }
 }

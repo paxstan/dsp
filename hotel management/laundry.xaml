@@ -25,7 +25,7 @@
     <Grid Background="#FFF0EDC4">
         <Label x:Name="label" Content="LAUNDRY" Height="63.677" Margin="385.326,10,409.816,0" VerticalAlignment="Top" FontSize="32" FontWeight="Bold"/>
         <Rectangle Fill="#FFF5F0AA" Margin="63.677,93.066,57.146,255.901" Stroke="Black"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="50.614" Margin="112.659,146.947,0,0" VerticalAlignment="Top" Width="295.525"/>
+        <ComboBox x:Name="items1" HorizontalAlignment="Left" Height="50.614" Margin="112.659,146.947,0,0" VerticalAlignment="Top" Width="295.525"/>
         <TextBox x:Name="laundryin_count" Margin="470.225,163.663,280.712,0" TextWrapping="Wrap" Text="QUANTITY" BorderThickness="0,0,0,1" Background="#FFF5F0AA" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="33.898" VerticalAlignment="Top" ToolTip="Enter the quantity" IsKeyboardFocusedChanged="laundryin_count_keyfocus" >
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
@@ -35,10 +35,10 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Right" Height="68.185" Margin="0,129.376,117.556,0" VerticalAlignment="Top" Width="114.292" Template="{DynamicResource in}"/>
+        <Button x:Name="laundry_in" Content="Button" HorizontalAlignment="Right" Height="68.185" Margin="0,129.376,117.556,0" VerticalAlignment="Top" Width="114.292" Template="{DynamicResource in}" Click="laundryin_call"/>
         <Rectangle Fill="#FFF5F0AA" Margin="63.677,0,57.146,58.34" Stroke="Black" Height="174.703" VerticalAlignment="Bottom"/>
-        <ComboBox x:Name="comboBox_Copy" HorizontalAlignment="Left" Height="50.614" Margin="112.659,0,0,128.548" VerticalAlignment="Bottom" Width="295.525"/>
-        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Right" Height="68.185" Margin="0,0,96.33,128.548" VerticalAlignment="Bottom" Width="135.518" Template="{DynamicResource out}"/>
+        <ComboBox x:Name="items2" HorizontalAlignment="Left" Height="50.614" Margin="112.659,0,0,128.548" VerticalAlignment="Bottom" Width="295.525"/>
+        <Button x:Name="laundry_out" Content="Button" HorizontalAlignment="Right" Height="68.185" Margin="0,0,96.33,128.548" VerticalAlignment="Bottom" Width="135.518" Template="{DynamicResource out}" Click="laundryout_call"/>
         <TextBox x:Name="laundryout_count" Margin="470.225,0,280.712,128.548" TextWrapping="Wrap" Text="QUANTITY" BorderThickness="0,0,0,1" Background="#FFF5F0AA" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="33.898" VerticalAlignment="Bottom" ToolTip="Enter the quantity" IsKeyboardFocusedChanged="laundryout_count_keyfocus" >
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">

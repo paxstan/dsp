@@ -177,5 +177,27 @@ namespace hotel_management
                 kot_room2.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void kotsubmit_call(object sender, RoutedEventArgs e)
+        {
+            if((room_no.Text=="ROOM NO") || ((kot_res.IsChecked == false) && (kot_roomser.IsChecked == false)))
+            {
+                MessageBox.Show("EMPTY CREDENTIALS");
+            }
+            if (kot_res.IsChecked == true)
+            {
+                if((kot_tableno.Text=="TABLE NUMBER")||(kot_item1.Text=="ITEMS")||(kot_sessions1.Text=="SESSION")||(kot_steward1.Text=="STEWARD NAME"))
+                {
+                    MessageBox.Show("EMPTY FEILD IN RESTAURANT KOT");
+                }
+            }
+            if (kot_roomser.IsChecked == true)
+            {
+                if ((kot_room2.Text == "ROOM NUMBER") || (kot_items2.Text == "ITEMS") || (kot_session2.Text == "SESSION") || (kot_steward2.Text == "STEWARD NAME"))
+                {
+                    MessageBox.Show("EMPTY FIELD IN ROOM KOT");
+                }
+            }
+        }
     }
 }

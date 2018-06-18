@@ -24,8 +24,8 @@
         <Image x:Name="image" HorizontalAlignment="Left" Height="161" Margin="501,10,0,0" VerticalAlignment="Top" Width="168" Source="dream-logo.png"/>
         <Label x:Name="label" Content="WELCOME" HorizontalAlignment="Left" Height="59" Margin="501,171,0,0" VerticalAlignment="Top" Width="201" FontWeight="Bold" FontSize="36"/>
         <Grid Height="401" Margin="397.032,235,0,0" Width="412" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFE3E1C6">
-            <TextBox x:Name="usernam" HorizontalAlignment="Left" Height="59" Margin="43,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" FontSize="32" />
-            <PasswordBox x:Name="PASSWORD" HorizontalAlignment="Left" Height="59" Margin="43,164,0,0" VerticalAlignment="Top" Width="323"/>
+            <TextBox x:Name="usernam" HorizontalAlignment="Left" Height="50.195" Margin="43,67.805,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" FontSize="25" Text="user name" Foreground="#FF9C8C8C" IsKeyboardFocusedChanged="usernam_keyfocus" />
+            <PasswordBox x:Name="PASSWORD" HorizontalAlignment="Left" Height="50.195" Margin="43,164,0,0" VerticalAlignment="Top" Width="323" FontSize="25" ToolTip="PASSWORD"/>
             <Button x:Name="login" Content="Button" Height="72.773" Margin="103.968,0,122.993,58.363" VerticalAlignment="Bottom" Template="{DynamicResource mysylebutton}" Click="main_pg_call"/>
         </Grid>
     </Grid>

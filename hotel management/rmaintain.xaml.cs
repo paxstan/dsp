@@ -66,5 +66,13 @@ namespace hotel_management
                 rmaintain_remark.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void lock_maintain(object sender, RoutedEventArgs e)
+        {
+            if ((rmaintain_rnum.Text == "ROOM NUMBER") || (rmaintain_sname.Text == "NAME") || (rmaintain_bdate.SelectedDate == null) || (rmaintain_btime.SelectedItem == null) || (rmaintain_redate.SelectedDate == null) || (rmaintain_retime.SelectedItem == null))
+            {
+                MessageBox.Show("EMPTY CREDENTIALS");
+            }
+        }
     }
 }

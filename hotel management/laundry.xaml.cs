@@ -52,5 +52,29 @@ namespace hotel_management
                 laundryout_count.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void laundryin_call(object sender, RoutedEventArgs e)
+        {
+            if (items1.SelectedItem == null)
+            {
+                MessageBox.Show("EMPTY LAUNDRY IN ITEM");
+            }
+            if (laundryin_count.Text == "QUANTITY")
+            {
+                MessageBox.Show("EMPTY LAUNDRY IN COUNT");
+            }
+        }
+
+        private void laundryout_call(object sender, RoutedEventArgs e)
+        {
+            if (items2.SelectedItem == null)
+            {
+                MessageBox.Show("EMPTY LAUNDRY IN ITEM");
+            }
+            if (laundryout_count.Text == "QUANTITY")
+            {
+                MessageBox.Show("EMPTY LAUNDRY IN COUNT");
+            }
+        }
     }
 }

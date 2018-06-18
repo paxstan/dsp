@@ -52,5 +52,12 @@ namespace hotel_management
                 rrelease_sname1.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void release_room(object sender, RoutedEventArgs e)
+        {
+            if((rrelease_rnum.Text=="ROOM NUMBER") || (rrelease_sname1.Text == "NAME")){
+                MessageBox.Show("EMPTY CREDENTIALS");
+            }
+        }
     }
 }

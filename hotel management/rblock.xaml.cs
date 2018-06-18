@@ -66,5 +66,13 @@ namespace hotel_management
                 rblock_remark.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void roomblock(object sender, RoutedEventArgs e)
+        {
+            if((rblock_rnum.Text=="ROOM NUMBER") || (rblock_sname.Text == "NAME") || (rblock_bdate.SelectedDate == null) || (rblock_btime.SelectedItem == null) || (rblock_redate.SelectedDate == null) || (rblock_retime.SelectedItem == null))
+            {
+                MessageBox.Show("EMPTY CREDENTIALS");
+            }
+        }
     }
 }

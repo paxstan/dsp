@@ -27,7 +27,7 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
-        <Button x:Name="button" Content="Button" Margin="408.197,0,408.196,95.88" Template="{DynamicResource release_but}" Height="58.78" VerticalAlignment="Bottom"/>
+        <Button x:Name="release" Content="Button" Margin="408.197,0,408.196,95.88" Template="{DynamicResource release_but}" Height="58.78" VerticalAlignment="Bottom" Click="release_room"/>
         <Label x:Name="label_Copy" Content="SUPERVISOR NAME :" HorizontalAlignment="Left" Height="43.362" Margin="203.988,154.905,0,0" VerticalAlignment="Top" Width="235.599" FontWeight="Bold" FontSize="20"/>
         <TextBox x:Name="rrelease_sname1" Margin="0,160.862,212.167,0" TextWrapping="Wrap" Text="NAME" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter supervior name" HorizontalAlignment="Right" Width="218.908" IsKeyboardFocusedChanged="rrelease_sname" >
             <TextBox.BorderBrush>

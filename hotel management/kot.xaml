@@ -28,6 +28,24 @@
         </TextBox>
         <Grid x:Name="restaurant_grid" HorizontalAlignment="Left" Margin="57.102,142.754,0,53.248" Width="408.848" Visibility="Hidden">
             <Rectangle Fill="#FFF4F4F5" Stroke="Black"/>
+            <TextBox x:Name="kot_tableno" Margin="130.375,29.788,88.473,0" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="table number" Text="TABLE NUMBER" IsKeyboardFocusedChanged="kot_tableno_keyfocus" >
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                        <GradientStop Color="#FF090A03" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <TextBox x:Name="kot_item1" Margin="130.375,91.197,88.473,0" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="ITEM NAME" Text="ITEMS" IsKeyboardFocusedChanged="jot_item1" >
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                        <GradientStop Color="#FF090A03" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+            </TextBox>
             <TextBox x:Name="kot_sessions1" Margin="130.375,0,88.473,134.119" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" ToolTip="session" Text="SESSION" Height="29" VerticalAlignment="Bottom" IsKeyboardFocusedChanged="kot_session1" >
                 <TextBox.BorderBrush>
                     <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
@@ -46,24 +64,6 @@
                     </LinearGradientBrush>
                 </TextBox.BorderBrush>
             </TextBox>
-            <TextBox x:Name="kot_item1" Margin="130.375,91.197,88.473,0" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="ITEM NAME" Text="ITEMS" IsKeyboardFocusedChanged="jot_item1" >
-                <TextBox.BorderBrush>
-                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
-                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
-                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
-                        <GradientStop Color="#FF090A03" Offset="1"/>
-                    </LinearGradientBrush>
-                </TextBox.BorderBrush>
-            </TextBox>
-            <TextBox x:Name="kot_tableno" Margin="130.375,29.788,88.473,0" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="table number" Text="TABLE NUMBER" IsKeyboardFocusedChanged="kot_tableno_keyfocus" >
-                <TextBox.BorderBrush>
-                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
-                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
-                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
-                        <GradientStop Color="#FF090A03" Offset="1"/>
-                    </LinearGradientBrush>
-                </TextBox.BorderBrush>
-            </TextBox>
             <Image x:Name="image1" HorizontalAlignment="Left" Height="48.788" Margin="50.249,10,0,0" VerticalAlignment="Top" Width="52.534" Source="icons8-table-52.png"/>
             <Image x:Name="image2" HorizontalAlignment="Left" Height="47.273" VerticalAlignment="Top" Width="52.534" Margin="50.249,72.924,0,0" Source="icons8-ingredients-filled-500.png"/>
             <Image x:Name="image3" HorizontalAlignment="Left" Margin="50.249,145.039,0,134.119" Width="52.534" Source="icons8-partly-cloudy-day-filled-100.png"/>
@@ -72,6 +72,24 @@
         <CheckBox x:Name="kot_res" Content="RESTAURANT" HorizontalAlignment="Left" Height="30.834" Margin="57.102,106.92,0,0" VerticalAlignment="Top" Width="220.412" FontWeight="Bold" FontSize="15" Click="resgrid"/>
         <Grid x:Name="room_grid" HorizontalAlignment="Right" Margin="0,142.754,51.391,53.248" Width="408.848" Visibility="Hidden">
             <Rectangle Fill="#FFF4F4F5" Stroke="Black"/>
+            <TextBox x:Name="kot_room2" Margin="165.777,29.788,53.071,0" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="room number" Text="ROOM NUMBER" IsKeyboardFocusedChanged="kot_room2_keyfocus" >
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                        <GradientStop Color="#FF090A03" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <TextBox x:Name="kot_items2" Margin="165.777,93.481,53.071,0" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="ITEM NAME" Text="ITEMS" IsKeyboardFocusedChanged="kot_items2_keyfocus" >
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                        <GradientStop Color="#FF090A03" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+            </TextBox>
             <TextBox x:Name="kot_session2" Margin="165.777,0,53.071,132.977" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" ToolTip="session" Text="SESSION" Height="29" VerticalAlignment="Bottom" IsKeyboardFocusedChanged="kot_session2_keyfocus" >
                 <TextBox.BorderBrush>
                     <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
@@ -90,24 +108,6 @@
                     </LinearGradientBrush>
                 </TextBox.BorderBrush>
             </TextBox>
-            <TextBox x:Name="kot_items2" Margin="165.777,93.481,53.071,0" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="ITEM NAME" Text="ITEMS" IsKeyboardFocusedChanged="kot_items2_keyfocus" >
-                <TextBox.BorderBrush>
-                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
-                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
-                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
-                        <GradientStop Color="#FF090A03" Offset="1"/>
-                    </LinearGradientBrush>
-                </TextBox.BorderBrush>
-            </TextBox>
-            <TextBox x:Name="kot_room2" Margin="165.777,29.788,53.071,0" TextWrapping="Wrap" BorderThickness="0,0,0,1" Background="#FFF4F4F5" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="room number" Text="ROOM NUMBER" IsKeyboardFocusedChanged="kot_room2_keyfocus" >
-                <TextBox.BorderBrush>
-                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
-                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
-                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
-                        <GradientStop Color="#FF090A03" Offset="1"/>
-                    </LinearGradientBrush>
-                </TextBox.BorderBrush>
-            </TextBox>
             <Image x:Name="image2_Copy" HorizontalAlignment="Left" Height="47.273" VerticalAlignment="Top" Width="52.534" Margin="73.089,75.208,0,0" Source="icons8-ingredients-filled-500.png"/>
             <Image x:Name="image3_Copy" HorizontalAlignment="Left" Margin="73.089,146.181,0,132.977" Width="52.534" Source="icons8-partly-cloudy-day-filled-100.png"/>
             <Image x:Name="image4_Copy" HorizontalAlignment="Left" Height="49.556" Margin="73.089,0,0,53.131" VerticalAlignment="Bottom" Width="52.534" Source="icons8-waiter-filled-100.png"/>
@@ -115,7 +115,7 @@
         </Grid>
         <CheckBox x:Name="kot_roomser" Content="ROOM SERVICE" HorizontalAlignment="Right" Height="30.834" Margin="0,106.92,239.827,0" VerticalAlignment="Top" Width="220.412" FontWeight="Bold" FontSize="15" Click="roomgrid"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="42.705" Margin="57.102,28.645,0,0" VerticalAlignment="Top" Width="47.965" Source="icons8-bedroom-filled-100.png"/>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Right" Height="61.35" Margin="0,26.393,62.813,0" VerticalAlignment="Top" Width="151.89" Template="{DynamicResource submit}"/>
+        <Button x:Name="kot_submit" Content="Button" HorizontalAlignment="Right" Height="61.35" Margin="0,26.393,62.813,0" VerticalAlignment="Top" Width="151.89" Template="{DynamicResource submit}" Click="kotsubmit_call"/>
 
     </Grid>
 </Page>

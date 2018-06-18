@@ -39,8 +39,8 @@
         </TextBox>
         <Label x:Name="label_Copy1" Content="BLOCK DURATION:" HorizontalAlignment="Left" Height="43.362" Margin="224.036,153.213,0,0" VerticalAlignment="Top" Width="213.918" FontWeight="Bold" FontSize="20"/>
         <Label x:Name="label_Copy2" Content="RELEASE :" HorizontalAlignment="Left" Margin="320.877,0,0,216.059" Width="117.077" FontWeight="Bold" FontSize="20" Height="43.362" VerticalAlignment="Bottom"/>
-        <DatePicker x:Name="rblock_bdate" Height="43.362" Margin="0,153.213,215.433,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="218.908"/>
-        <ComboBox x:Name="rblock_btime" Margin="0,214.584,319.449,0" HorizontalAlignment="Right" Width="114.892" Height="35.469" VerticalAlignment="Top">
+        <DatePicker x:Name="rmaintain_bdate" Height="43.362" Margin="0,153.213,215.433,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="218.908"/>
+        <ComboBox x:Name="rmaintain_btime" Margin="0,214.584,319.449,0" HorizontalAlignment="Right" Width="114.892" Height="35.469" VerticalAlignment="Top">
             <ComboBoxItem>00</ComboBoxItem>
             <ComboBoxItem>01</ComboBoxItem>
             <ComboBoxItem>02</ComboBoxItem>
@@ -65,8 +65,8 @@
             <ComboBoxItem>22</ComboBoxItem>
             <ComboBoxItem>23</ComboBoxItem>
         </ComboBox>
-        <DatePicker x:Name="rblock_redate" Height="43.362" Margin="0,0,215.433,216.059" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="218.908"/>
-        <ComboBox x:Name="rblock_retime" Margin="0,0,319.449,160.876" Height="35.469" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="114.892">
+        <DatePicker x:Name="rmaintain_redate" Height="43.362" Margin="0,0,215.433,216.059" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="218.908"/>
+        <ComboBox x:Name="rmaintain_retime" Margin="0,0,319.449,160.876" Height="35.469" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="114.892">
             <ComboBoxItem>00</ComboBoxItem>
             <ComboBoxItem>01</ComboBoxItem>
             <ComboBoxItem>02</ComboBoxItem>
@@ -92,7 +92,7 @@
             <ComboBoxItem>23</ComboBoxItem>
 
         </ComboBox>
-        <Button x:Name="button" Content="Button" Height="61.262" Margin="422.055,0,407.617,10" VerticalAlignment="Bottom" Template="{DynamicResource BLOCK}"/>
+        <Button x:Name="LOCK" Content="Button" Height="61.262" Margin="422.055,0,407.617,10" VerticalAlignment="Bottom" Template="{DynamicResource BLOCK}" Click="lock_maintain"/>
         <Label x:Name="label_Copy3" Content="REMARK :" HorizontalAlignment="Left" Margin="320.877,0,0,100.428" Width="117.077" FontWeight="Bold" FontSize="20" Height="43.362" VerticalAlignment="Bottom"/>
         <TextBox x:Name="rmaintain_remark" Margin="0,0,215.433,108.833" TextWrapping="Wrap" Text="REMARK" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Bottom" ToolTip="remark" HorizontalAlignment="Right" Width="218.908" IsKeyboardFocusedChanged="rmaintain_remark_keyfocus" >
             <TextBox.BorderBrush>

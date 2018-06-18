@@ -41,16 +41,15 @@
             </TextBox.BorderBrush>
         </TextBox>
         <Image x:Name="image3" HorizontalAlignment="Left" Margin="70.477,57.768,0,0" Width="58.78" Source="icons8-user-96.png" Height="48.593" VerticalAlignment="Top"/>
-        <Button x:Name="button_Copy" Content="Button" Margin="384.669,58.139,415.382,0" Template="{DynamicResource FETCH}" Height="74.114" VerticalAlignment="Top"/>
+        <Button x:Name="fetch_user_but" Content="Button" Margin="384.669,58.139,415.382,0" Template="{DynamicResource FETCH}" Height="74.114" VerticalAlignment="Top" Click="fetch_user"/>
         <Grid Margin="0,37.553,25.153,131.809" Background="#FFBDBB9F" HorizontalAlignment="Right" Width="390.229">
             <Label x:Name="label" Content="PREVILEGE" Height="50.615" Margin="115.926,10,114.293,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="28"/>
-            <CheckBox x:Name="checkBox" Content="ADMINISTRATION" Height="42.452" Margin="96.333,89.801,88.169,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
-            <CheckBox x:Name="checkBox_Copy" Content="STORES" Height="42.452" Margin="96.333,0,127.355,52.145" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold"/>
-            <CheckBox x:Name="checkBox_Copy1" Content="HOUSE KEEPING" Height="42.452" Margin="96.333,0,88.169,94.597" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="20"/>
-            <CheckBox x:Name="checkBox_Copy2" Content="F&amp;B" Height="42.452" Margin="96.333,0,127.355,137.049" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold"/>
-            <CheckBox x:Name="checkBox_Copy3" Content="FRONT DESK" Height="42.452" Margin="96.333,132.253,127.355,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+            <CheckBox x:Name="admin_pre" Content="ADMINISTRATION" Height="42.452" Margin="96.333,89.801,88.169,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+            <CheckBox x:Name="store_pre" Content="STORES" Height="42.452" Margin="96.333,0,127.355,52.145" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold"/>
+            <CheckBox x:Name="hk_pre" Content="HOUSE KEEPING" Height="42.452" Margin="96.333,0,88.169,94.597" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="20"/>
+            <CheckBox x:Name="fb_pre" Content="F&amp;B" Height="42.452" Margin="96.333,0,127.355,137.049" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold"/>
+            <CheckBox x:Name="front_pre" Content="FRONT DESK" Height="42.452" Margin="96.333,132.253,127.355,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
         </Grid>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="56.015" Margin="68.845,137.253,0,0" VerticalAlignment="Top" Width="58.78" Source="icons8-user-male-100.png"/>
         <TextBox x:Name="update_name" HorizontalAlignment="Left" Margin="152.217,157.737,0,0" TextWrapping="Wrap" Text="NAME" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Top" ToolTip="Enter Name Number" IsKeyboardFocusedChanged="update_name_keyfocus" >
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
@@ -60,6 +59,7 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="56.015" Margin="68.845,137.253,0,0" VerticalAlignment="Top" Width="58.78" Source="icons8-user-male-100.png"/>
         <TextBox x:Name="update_desig" HorizontalAlignment="Left" Margin="152.217,226.212,0,0" TextWrapping="Wrap" Text="DESIGNATION" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Top" ToolTip="Enter designation" IsKeyboardFocusedChanged="update_desig_keyfocus" >
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
@@ -80,15 +80,6 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
-        <TextBox x:Name="update_remark" HorizontalAlignment="Left" Margin="153.85,0,0,60.858" TextWrapping="Wrap" Text="REMARK" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Bottom" ToolTip="Enter designation" IsKeyboardFocusedChanged="update_remark_keyfocus" >
-            <TextBox.BorderBrush>
-                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
-                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
-                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
-                    <GradientStop Color="#FF090A03" Offset="1"/>
-                </LinearGradientBrush>
-            </TextBox.BorderBrush>
-        </TextBox>
         <Image x:Name="image2" HorizontalAlignment="Left" Margin="68.845,0,0,60.858" Width="58.78" Source="icons8-info-filled-100.png" Height="52.75" VerticalAlignment="Bottom"/>
         <TextBox x:Name="update_pass" HorizontalAlignment="Left" Margin="152.217,0,0,131.809" TextWrapping="Wrap" Text="PASSWORD" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Bottom" ToolTip="Enter Name Number" IsKeyboardFocusedChanged="update_pass_keyfocus" >
             <TextBox.BorderBrush>
@@ -99,8 +90,17 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
+        <TextBox x:Name="update_remark" HorizontalAlignment="Left" Margin="153.85,0,0,60.858" TextWrapping="Wrap" Text="REMARK" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Bottom" ToolTip="Enter designation" IsKeyboardFocusedChanged="update_remark_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
         <Image x:Name="image4" HorizontalAlignment="Left" Height="51.859" Margin="67.213,0,0,131.809" VerticalAlignment="Bottom" Width="60.412" Source="icons8-lock-filled-100.png"/>
-        <Button x:Name="button" Content="Button" Height="65.31" Margin="444.482,0,350.671,31.079" VerticalAlignment="Bottom" Template="{DynamicResource update}"/>
+        <Button x:Name="update_but" Content="Button" Height="65.31" Margin="444.482,0,350.671,31.079" VerticalAlignment="Bottom" Template="{DynamicResource update}" Click="update_call"/>
 
     </Grid>
 </Page>

@@ -34,6 +34,18 @@ namespace hotel_management
             NavigationService.Navigate(new Uri("/main_pg.xaml", UriKind.RelativeOrAbsolute));
         }
 
-       
+        private void usernam_keyfocus(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (usernam.Text == "user name")
+            {
+                usernam.Text = "";
+                usernam.Foreground = new SolidColorBrush(Colors.Black);
+            }
+            else if (usernam.Text == "")
+            {
+                usernam.Text = "user name";
+                usernam.Foreground = new SolidColorBrush(Colors.Gray);
+            }
+        }
     }
 }

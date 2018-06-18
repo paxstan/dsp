@@ -149,5 +149,29 @@ namespace hotel_management
                 checkin_amt.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void checkin(object sender, RoutedEventArgs e)
+        {
+            if(checkin_ph.Text=="PHONE NUMBER")
+            {
+                MessageBox.Show("PHONE NUMBER FIELD IS EMPTY");
+            }
+            if ((checkin_date.SelectedDate == null) || (checkin_out_date.SelectedDate == null))
+            {
+                MessageBox.Show("EMPTY DATE");
+            }
+            if((checkin_hname.SelectedItem==null)||(checkin_rtype.SelectedItem==null)||(checkin_rnum.SelectedItem==null)||(checkin_person.Text=="NO.OF PERSON"))
+            {
+                MessageBox.Show("EMPTY HOTEL FIELDS");
+            }
+        }
+
+        private void phno_fetch_keydown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                MessageBox.Show("enter pressed");
+            }
+        }
     }
 }

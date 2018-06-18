@@ -17,8 +17,8 @@
     </Page.Resources>
 
     <Grid Background="#FFF0EDC4">
-        <Label x:Name="label" Content="ROOM NO :" HorizontalAlignment="Left" Height="43.362" Margin="289.079,10,0,0" VerticalAlignment="Top" Width="148.875" FontWeight="Bold" FontSize="20"/>
-        <TextBox x:Name="rblock_rnum" Margin="0,15.957,215.416,0" TextWrapping="Wrap" Text="ROOM NUMBER" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter Room Number" HorizontalAlignment="Right" Width="218.908" IsKeyboardFocusedChanged="rblock_rnum_keyfocus" >
+        <Label x:Name="label" Content="ROOM NO :" HorizontalAlignment="Left" Height="43.362" Margin="289.079,18.374,0,0" VerticalAlignment="Top" Width="148.875" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="rblock_rnum" Margin="0,24.331,215.416,0" TextWrapping="Wrap" Text="ROOM NUMBER" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter Room Number" HorizontalAlignment="Right" Width="218.908" IsKeyboardFocusedChanged="rblock_rnum_keyfocus" >
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
                     <GradientStop Color="#FFABADB3" Offset="0.05"/>
@@ -95,7 +95,7 @@
         </ComboBox>
         <TextBox x:Name="textBox2" HorizontalAlignment="Right" Height="26.017" Margin="0,224.036,215.416,0" TextWrapping="Wrap" Text=":00 hr" VerticalAlignment="Top" Width="71.984" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4"/>
         <TextBox x:Name="textBox2_Copy" HorizontalAlignment="Right" Height="26.017" Margin="0,0,215.416,160.876" TextWrapping="Wrap" Text=":00 hr" VerticalAlignment="Bottom" Width="71.984" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4"/>
-        <Button x:Name="button" Content="Button" Height="61.262" Margin="422.055,0,407.6,10" VerticalAlignment="Bottom" Template="{DynamicResource BLOCK}"/>
+        <Button x:Name="block" Content="Button" Height="61.262" Margin="422.055,0,407.6,10" VerticalAlignment="Bottom" Template="{DynamicResource BLOCK}" Click="roomblock"/>
         <Label x:Name="label_Copy3" Content="REMARK :" HorizontalAlignment="Left" Margin="320.877,0,0,100.428" Width="117.077" FontWeight="Bold" FontSize="20" Height="43.362" VerticalAlignment="Bottom"/>
         <TextBox x:Name="rblock_remark" Margin="0,0,215.416,108.833" TextWrapping="Wrap" Text="REMARK" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Bottom" ToolTip="remark" HorizontalAlignment="Right" Width="218.908" IsKeyboardFocusedChanged="rblock_remark_keyfocus" >
             <TextBox.BorderBrush>

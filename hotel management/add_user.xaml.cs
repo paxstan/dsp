@@ -94,5 +94,16 @@ namespace hotel_management
                 add_user_remark1.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void create_user_call(object sender, RoutedEventArgs e)
+        {
+            if((add_user_name.Text=="NAME")|| (add_user_desig.Text == "DESIGNATION") || (add_user_user.Text == "USER NAME") || (add_user_pass.Text == "PASSWORD")){
+                MessageBox.Show("EMPTY CREDENTIALS");
+            }
+            if((admin_pre.IsChecked==false)&& (front_pre.IsChecked == false) && (fb_pre.IsChecked == false) && (hk_pre.IsChecked == false) && (store_pre.IsChecked == false))
+            {
+                MessageBox.Show("EMPTY PREVILEGE");
+            }
+        }
     }
 }

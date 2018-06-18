@@ -107,13 +107,9 @@
                 </TextBox.BorderBrush>
             </TextBox>
             <Image x:Name="image9" HorizontalAlignment="Left" Height="46.5" Margin="27,0,0,119.312" VerticalAlignment="Bottom" Width="48" Source="icons8-room-52.png"/>
-            <ComboBox x:Name="checkin_rtype_Copy" Height="30" Margin="102,94.763,10,0" VerticalAlignment="Top">
-                <ComboBoxItem>ROMANTIC DUO DWELL</ComboBoxItem>
-                <ComboBoxItem>QUADRATIC DUPLET CHAMBER</ComboBoxItem>
-                <ComboBoxItem>STAR LOUNGE</ComboBoxItem>
-                <ComboBoxItem>NUCLEAR AREA</ComboBoxItem>
+            <ComboBox x:Name="checkin_rnum" Height="30" Margin="102,0,91,119.312" VerticalAlignment="Bottom">
+                <ComboBoxItem>1</ComboBoxItem>
             </ComboBox>
-            <ComboBox x:Name="checkin_rnum" Height="30" Margin="102,0,91,119.312" VerticalAlignment="Bottom"/>
             <Image x:Name="image10" HorizontalAlignment="Left" Height="44.048" Margin="27,0,0,70.264" VerticalAlignment="Bottom" Width="48" Source="icons8-receive-cash-filled-100.png"/>
             <Image x:Name="image11" HorizontalAlignment="Left" Height="40" Margin="27,0,0,10" VerticalAlignment="Bottom" Width="48" Source="icons8-paycheque-filled-100.png"/>
             <TextBox x:Name="checkin_advance" Margin="102,0,5,70.264" TextWrapping="Wrap" Text="ADVANCE PAID" BorderThickness="0,0,0,1" Background="#FFE0DFCC" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" ToolTip="Enter pin code" Height="29" VerticalAlignment="Bottom" IsKeyboardFocusedChanged="advance_keyfocus" >
@@ -135,8 +131,8 @@
                 </TextBox.BorderBrush>
             </TextBox>
         </Grid>
-        <Button x:Name="checkin_but" Content="Button" Height="61.332" Margin="393.307,0,407.06,10" VerticalAlignment="Bottom" Template="{DynamicResource STANDARD_BUT}"/>
-        <TextBox x:Name="checkin_ph" HorizontalAlignment="Left" Margin="110,107,0,0" TextWrapping="Wrap" Text="PHONE NUMBER" Width="190" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter Phone Number" IsKeyboardFocusedChanged="info_ph_keyfocus" >
+        <Button x:Name="checkin_but" Content="Button" Height="61.332" Margin="393.307,0,407.06,10" VerticalAlignment="Bottom" Template="{DynamicResource STANDARD_BUT}" Click="checkin"/>
+        <TextBox x:Name="checkin_ph" HorizontalAlignment="Left" Margin="110,107,0,0" TextWrapping="Wrap" Text="PHONE NUMBER" Width="190" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter Phone Number" IsKeyboardFocusedChanged="info_ph_keyfocus" KeyDown="phno_fetch_keydown" >
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
                     <GradientStop Color="#FFABADB3" Offset="0.05"/>
