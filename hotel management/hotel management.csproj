@@ -443,6 +443,18 @@
   <ItemGroup>
     <Resource Include="icons8-buy-filled-100.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-marker-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-india-map-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-airplane-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-watch-filled-100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

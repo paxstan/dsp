@@ -170,5 +170,12 @@ namespace hotel_management
                 info_id_num.Foreground = new SolidColorBrush(Colors.Gray);
             }
         }
+
+        private void create_info(object sender, RoutedEventArgs e)
+        {
+            if((info_ph.Text=="PHONE NUMBER")|| (info_name.Text == "NAME") || (info_str.Text == "STREET ADDRESS") || (info_dist.Text == "DISTRICT NAME") || (info_state.Text == "STATE NAME") || (info_country.Text == "COUNTRY NAME")||(info_pincode.Text == "PIN CODE") || (info_id_num.Text == "ID NUMBER") ||( (info_id.SelectedItem == null) && (info_other_id.Text == "OTHERS")) || (info_dob.SelectedDate == null)){
+                MessageBox.Show("EMPTY CREDENTIALS");
+            }
+        }
     }
 }

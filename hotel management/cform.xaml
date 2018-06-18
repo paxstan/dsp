@@ -34,12 +34,12 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
-        <DatePicker Height="24.887" Margin="181.58,126.846,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="175.156"/>
-        <RadioButton x:Name="radioButton" Content="YES" HorizontalAlignment="Left" Margin="181.58,0,0,158.397" Width="95.872" Height="25.566" VerticalAlignment="Bottom"/>
-        <RadioButton x:Name="radioButton1" Content="NO" Margin="261.885,0,0,158.397" HorizontalAlignment="Left" Width="107.377" Height="25.566" VerticalAlignment="Bottom"/>
-        <DatePicker Height="24.887" Margin="181.58,0,0,104.655" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="175.156"/>
+        <DatePicker x:Name="date_of_issue1" Height="24.887" Margin="181.58,126.846,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="175.156"/>
+        <RadioButton x:Name="employed" Content="YES" HorizontalAlignment="Left" Margin="181.58,0,0,170.347" Width="95.872" Height="25.566" VerticalAlignment="Bottom"/>
+        <RadioButton x:Name="unemployed" Content="NO" Margin="249.359,0,0,170.347" HorizontalAlignment="Left" Width="107.377" Height="25.566" VerticalAlignment="Bottom"/>
+        <DatePicker x:Name="date_india" Height="24.887" Margin="181.58,0,0,104.655" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="175.156"/>
         <Grid Margin="399.941,26.688,32.15,91.872" Background="#FFEEE895">
-            <DatePicker Height="30.679" Margin="171.291,79.255,34.513,0" VerticalAlignment="Top"/>
+            <DatePicker x:Name="date_visa" Height="30.679" Margin="171.291,79.255,34.513,0" VerticalAlignment="Top"/>
             <TextBox x:Name="cform_issue_visa" Margin="171.291,148.198,28.092,0" TextWrapping="Wrap" Text="PLACE OF ISSUE" BorderThickness="0,0,0,1" Background="#FFEEE895" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="place of issue" >
                 <TextBox.BorderBrush>
                     <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
@@ -68,9 +68,17 @@
                 </TextBox.BorderBrush>
             </TextBox>
             <Label x:Name="label" Content="CERFICATE OF REGISTRATION" Height="30.448" Margin="70.335,10,28.092,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+            <Image x:Name="image4" HorizontalAlignment="Left" Height="49.309" Margin="70.335,60.625,0,0" VerticalAlignment="Top" Width="62.235" Source="icons8-calendar-filled-100.png"/>
+            <Image x:Name="image5" HorizontalAlignment="Left" Margin="70.335,133.422,0,175.611" Width="62.235" Source="icons8-marker-filled-100.png"/>
+            <Image x:Name="image6" HorizontalAlignment="Left" Height="54.393" Margin="69.028,0,0,97.636" VerticalAlignment="Bottom" Width="63.542" Source="icons8-airplane-filled-100.png"/>
+            <Image x:Name="image7" HorizontalAlignment="Left" Height="49.18" Margin="70.335,0,0,27.33" VerticalAlignment="Bottom" Width="62.235" Source="icons8-watch-filled-100.png"/>
         </Grid>
-        <Label x:Name="label1" Content="WHETHER EMPLOYED &#xD;&#xA;IN INDIA :" HorizontalAlignment="Left" Height="43.516" Margin="10,0,0,146.447" VerticalAlignment="Bottom" Width="166.58" FontWeight="Bold"/>
-        <Button x:Name="button" Content="Button" Height="60.254" Margin="313.017,0,377.288,10" VerticalAlignment="Bottom" Template="{DynamicResource SUBMIT}"/>
+        <Label x:Name="label1" Content="WHETHER EMPLOYED &#xD;&#xA;IN INDIA :" HorizontalAlignment="Left" Height="43.516" Margin="10,0,0,158.397" VerticalAlignment="Bottom" Width="166.58" FontWeight="Bold"/>
+        <Button x:Name="submit_cform" Content="Button" Height="60.254" Margin="313.017,0,377.288,10" VerticalAlignment="Bottom" Template="{DynamicResource SUBMIT}" Click="submit_cfrom"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="49.684" Margin="76.445,26.688,0,0" VerticalAlignment="Top" Width="44.326" Source="icons8-passport-filled-100.png"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="47.395" Margin="76.445,104.338,0,0" VerticalAlignment="Top" Width="44.326" Source="icons8-calendar-filled-100.png"/>
+        <Image x:Name="image2" HorizontalAlignment="Left" Height="43.881" Margin="76.445,178.216,0,0" VerticalAlignment="Top" Width="45.968" Source="icons8-marker-filled-100.png"/>
+        <Image x:Name="image3" HorizontalAlignment="Left" Height="48.742" Margin="76.445,0,0,104.655" VerticalAlignment="Bottom" Width="59.102" Source="icons8-india-map-filled-100.png"/>
 
     </Grid>
 </Window>

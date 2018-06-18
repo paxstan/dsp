@@ -133,7 +133,7 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
-        <Button x:Name="create_but" Content="Button" Height="61.332" Margin="143.847,0,44.56,74.704" VerticalAlignment="Bottom" Template="{DynamicResource ENTER}" Grid.Column="1"/>
+        <Button x:Name="create_but" Content="Button" Height="61.332" Margin="143.847,0,44.56,74.704" VerticalAlignment="Bottom" Template="{DynamicResource ENTER}" Grid.Column="1" Click="create_info"/>
         <CheckBox x:Name="info_foreign" Content="FOREIGNER" Height="30.709" Margin="139.956,0,0,204.286" VerticalAlignment="Bottom" FontSize="15" Checked="CFORM_CALL" Grid.Column="1"/>
 
     </Grid>

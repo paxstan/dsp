@@ -23,5 +23,13 @@ namespace hotel_management
         {
             InitializeComponent();
         }
+
+        private void submit_cfrom(object sender, RoutedEventArgs e)
+        {
+            if((cform_passport.Text=="PASSPORT NUMBER")||(date_of_issue1.SelectedDate==null)||(cform_issue.Text=="PLACE OF ISSUE")||(date_india.SelectedDate==null)||(date_visa.SelectedDate==null)||(cform_issue_visa.Text=="PLACE OF ISSUE")||(cform_arrived.Text=="ARRIVED FROM")||(cform_stay.Text=="DURATION OF STAY"))
+            {
+                MessageBox.Show("EMPTY CREDENTIALS");
+            }
+        }
     }
 }
