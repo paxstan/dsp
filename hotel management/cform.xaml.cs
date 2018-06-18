@@ -10,23 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace hotel_management
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for cform.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class cform : Window
     {
-        public MainWindow()
+        public cform()
         {
             InitializeComponent();
-            main.Content = new entrypg();
-            
         }
-        
-
     }
 }

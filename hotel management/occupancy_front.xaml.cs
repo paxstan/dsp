@@ -16,17 +16,13 @@ using System.Windows.Shapes;
 namespace hotel_management
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for occupancy_front.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class occupancy_front : Page
     {
-        public MainWindow()
+        public occupancy_front()
         {
             InitializeComponent();
-            main.Content = new entrypg();
-            
         }
-        
-
     }
 }

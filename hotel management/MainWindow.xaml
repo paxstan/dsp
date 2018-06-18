@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel_management"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="700" Width="1200" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ControlTemplate x:Key="mysylebutton" TargetType="{x:Type Button}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7*"/>
+                    <RowDefinition Height="58*"/>
+                </Grid.RowDefinitions>
+                <Rectangle Fill="Black" HorizontalAlignment="Left" Height="65" Margin="0,0,0,-0.333" Stroke="Black" VerticalAlignment="Top" Width="184" RadiusY="37.034" RadiusX="37.034" Grid.RowSpan="2"/>
+                <Label x:Name="label" Content="LOG IN" HorizontalAlignment="Right" Margin="0,7,37,0" VerticalAlignment="Top" Width="108" Height="49" Foreground="White" FontSize="28" FontWeight="Normal" Grid.Row="0" Grid.RowSpan="2"/>
+            </Grid>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid x:Name="frame_grid" Width="1200" Height="700" Background="White">
+        <Frame x:Name="main" Content="Frame" HorizontalAlignment="Left" Height="700" Margin="-10,-12.95,0,0" VerticalAlignment="Top" Width="1200" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

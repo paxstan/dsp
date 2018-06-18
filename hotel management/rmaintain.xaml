@@ -1,0 +1,110 @@
+﻿<Page x:Class="hotel_management.rmaintain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:hotel_management"
+      mc:Ignorable="d" 
+      d:DesignHeight="523.67" d:DesignWidth="969.875"
+      Title="rmaintain">
+    <Page.Resources>
+        <ControlTemplate x:Key="BLOCK" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="Black" Margin="-2.632,0,10,0" Stroke="Black" RadiusY="40.485" RadiusX="40.485"/>
+                <Label x:Name="label" Content="LOCK" Margin="31.554,10,32.001,15.497" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            </Grid>
+        </ControlTemplate>
+    </Page.Resources>
+
+    <Grid Background="#FFF0EDC4">
+        <Label x:Name="label" Content="ROOM NO :" HorizontalAlignment="Left" Height="43.362" Margin="289.079,10,0,0" VerticalAlignment="Top" Width="148.875" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="rmaintain_rnum" Margin="0,15.957,215.433,0" TextWrapping="Wrap" Text="ROOM NUMBER" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter Room Number" HorizontalAlignment="Right" Width="218.908" IsKeyboardFocusedChanged="rrelease_rnum_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Label x:Name="label_Copy" Content="SUPERVISOR NAME :" HorizontalAlignment="Left" Height="43.362" Margin="202.355,80.942,0,0" VerticalAlignment="Top" Width="235.599" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="rmaintain_sname" Margin="0,86.899,215.433,0" TextWrapping="Wrap" Text="NAME" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter supervior name" HorizontalAlignment="Right" Width="218.908" IsKeyboardFocusedChanged="rmaintain_sname_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Label x:Name="label_Copy1" Content="BLOCK DURATION:" HorizontalAlignment="Left" Height="43.362" Margin="224.036,153.213,0,0" VerticalAlignment="Top" Width="213.918" FontWeight="Bold" FontSize="20"/>
+        <Label x:Name="label_Copy2" Content="RELEASE :" HorizontalAlignment="Left" Margin="320.877,0,0,216.059" Width="117.077" FontWeight="Bold" FontSize="20" Height="43.362" VerticalAlignment="Bottom"/>
+        <DatePicker x:Name="rblock_bdate" Height="43.362" Margin="0,153.213,215.433,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="218.908"/>
+        <ComboBox x:Name="rblock_btime" Margin="0,214.584,319.449,0" HorizontalAlignment="Right" Width="114.892" Height="35.469" VerticalAlignment="Top">
+            <ComboBoxItem>00</ComboBoxItem>
+            <ComboBoxItem>01</ComboBoxItem>
+            <ComboBoxItem>02</ComboBoxItem>
+            <ComboBoxItem>03</ComboBoxItem>
+            <ComboBoxItem>04</ComboBoxItem>
+            <ComboBoxItem>05</ComboBoxItem>
+            <ComboBoxItem>06</ComboBoxItem>
+            <ComboBoxItem>07</ComboBoxItem>
+            <ComboBoxItem>08</ComboBoxItem>
+            <ComboBoxItem>09</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+            <ComboBoxItem>11</ComboBoxItem>
+            <ComboBoxItem>12</ComboBoxItem>
+            <ComboBoxItem>13</ComboBoxItem>
+            <ComboBoxItem>14</ComboBoxItem>
+            <ComboBoxItem>15</ComboBoxItem>
+            <ComboBoxItem>16</ComboBoxItem>
+            <ComboBoxItem>18</ComboBoxItem>
+            <ComboBoxItem>19</ComboBoxItem>
+            <ComboBoxItem>20</ComboBoxItem>
+            <ComboBoxItem>21</ComboBoxItem>
+            <ComboBoxItem>22</ComboBoxItem>
+            <ComboBoxItem>23</ComboBoxItem>
+        </ComboBox>
+        <DatePicker x:Name="rblock_redate" Height="43.362" Margin="0,0,215.433,216.059" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="218.908"/>
+        <ComboBox x:Name="rblock_retime" Margin="0,0,319.449,160.876" Height="35.469" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="114.892">
+            <ComboBoxItem>00</ComboBoxItem>
+            <ComboBoxItem>01</ComboBoxItem>
+            <ComboBoxItem>02</ComboBoxItem>
+            <ComboBoxItem>03</ComboBoxItem>
+            <ComboBoxItem>04</ComboBoxItem>
+            <ComboBoxItem>05</ComboBoxItem>
+            <ComboBoxItem>06</ComboBoxItem>
+            <ComboBoxItem>07</ComboBoxItem>
+            <ComboBoxItem>08</ComboBoxItem>
+            <ComboBoxItem>09</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+            <ComboBoxItem>11</ComboBoxItem>
+            <ComboBoxItem>12</ComboBoxItem>
+            <ComboBoxItem>13</ComboBoxItem>
+            <ComboBoxItem>14</ComboBoxItem>
+            <ComboBoxItem>15</ComboBoxItem>
+            <ComboBoxItem>16</ComboBoxItem>
+            <ComboBoxItem>18</ComboBoxItem>
+            <ComboBoxItem>19</ComboBoxItem>
+            <ComboBoxItem>20</ComboBoxItem>
+            <ComboBoxItem>21</ComboBoxItem>
+            <ComboBoxItem>22</ComboBoxItem>
+            <ComboBoxItem>23</ComboBoxItem>
+
+        </ComboBox>
+        <Button x:Name="button" Content="Button" Height="61.262" Margin="422.055,0,407.617,10" VerticalAlignment="Bottom" Template="{DynamicResource BLOCK}"/>
+        <Label x:Name="label_Copy3" Content="REMARK :" HorizontalAlignment="Left" Margin="320.877,0,0,100.428" Width="117.077" FontWeight="Bold" FontSize="20" Height="43.362" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="rmaintain_remark" Margin="0,0,215.433,108.833" TextWrapping="Wrap" Text="REMARK" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Bottom" ToolTip="remark" HorizontalAlignment="Right" Width="218.908" IsKeyboardFocusedChanged="rmaintain_remark_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Right" Height="26.017" Margin="0,224.036,215.433,0" TextWrapping="Wrap" Text=":00 hr" VerticalAlignment="Top" Width="71.984" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4"/>
+        <TextBox x:Name="textBox2_Copy" HorizontalAlignment="Right" Height="26.017" Margin="0,0,215.433,160.876" TextWrapping="Wrap" Text=":00 hr" VerticalAlignment="Bottom" Width="71.984" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4"/>
+
+    </Grid>
+</Page>

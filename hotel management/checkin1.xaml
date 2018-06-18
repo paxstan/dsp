@@ -1,0 +1,203 @@
+﻿<Page x:Class="hotel_management.checkin1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:hotel_management"
+      mc:Ignorable="d" 
+      d:DesignHeight="523.67" d:DesignWidth="969.858"
+      Title="checkin1">
+    <Page.Resources>
+        <ControlTemplate x:Key="ENTER" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="Black" Margin="-2.632,0,0,0" Stroke="Black" RadiusY="40.485" RadiusX="40.485"/>
+                <Label x:Name="label" Content="CREATE" Margin="31.554,10,32.001,15.497" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="CHECKIN" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="Black" Margin="-2.632,0,0,0" Stroke="Black" RadiusY="40.485" RadiusX="40.485"/>
+                <Label x:Name="label" Content="CHECK IN" Margin="31.554,10,32.001,15.497" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            </Grid>
+        </ControlTemplate>
+    </Page.Resources>
+
+    <Grid Background="#FFF0EDC4">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="46.433" Margin="51.593,30.956,0,0" TextWrapping="Wrap" Text="CHECK IN" VerticalAlignment="Top" Width="167.678" FontSize="32" FontWeight="Bold" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="41.138" Margin="51.593,95.599,0,0" VerticalAlignment="Top" Width="43.803" Source="icons8-phone-filled-100.png"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="44.899" Margin="51.593,156.173,0,0" VerticalAlignment="Top" Width="43.803" Source="icons8-user-male-100.png"/>
+        <Image x:Name="image1_Copy" HorizontalAlignment="Left" Margin="51.593,229.232,0,244.427" Width="53.989" Source="icons8-street-view-filled-100.png"/>
+        <Image x:Name="image2" HorizontalAlignment="Left" Height="49.064" Margin="51.593,0,0,153.917" VerticalAlignment="Bottom" Width="53.989" Source="icons8-address-filled-100.png"/>
+        <Image x:Name="image3" HorizontalAlignment="Left" Height="49.064" Margin="51.593,0,0,63.406" VerticalAlignment="Bottom" Width="53.989" Source="icons8-museum-filled-100.png"/>
+        <Image x:Name="image4" HorizontalAlignment="Left" Height="42.847" Margin="343.576,96.692,0,0" VerticalAlignment="Top" Width="48.488" Source="icons8-country-filled-100.png"/>
+        <Image x:Name="image5" HorizontalAlignment="Left" Height="51.92" Margin="343.576,156.173,0,0" VerticalAlignment="Top" Width="65.976" Source="icons8-postcode-filled-100.png"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="343.576,248.969,0,245.701" TextWrapping="Wrap" Text="CHECK IN :" Width="65.976" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4"/>
+        <DatePicker x:Name="checkin_date" Margin="414.552,248.969,370.306,245.701"/>
+        <ComboBox x:Name="checkin_time" Height="26.017" Margin="414.552,0,471.198,198.457" VerticalAlignment="Bottom">
+            <ComboBoxItem>00</ComboBoxItem>
+            <ComboBoxItem>01</ComboBoxItem>
+            <ComboBoxItem>02</ComboBoxItem>
+            <ComboBoxItem>03</ComboBoxItem>
+            <ComboBoxItem>04</ComboBoxItem>
+            <ComboBoxItem>05</ComboBoxItem>
+            <ComboBoxItem>06</ComboBoxItem>
+            <ComboBoxItem>07</ComboBoxItem>
+            <ComboBoxItem>08</ComboBoxItem>
+            <ComboBoxItem>09</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+            <ComboBoxItem>11</ComboBoxItem>
+            <ComboBoxItem>12</ComboBoxItem>
+            <ComboBoxItem>13</ComboBoxItem>
+            <ComboBoxItem>14</ComboBoxItem>
+            <ComboBoxItem>15</ComboBoxItem>
+            <ComboBoxItem>16</ComboBoxItem>
+            <ComboBoxItem>18</ComboBoxItem>
+            <ComboBoxItem>19</ComboBoxItem>
+            <ComboBoxItem>20</ComboBoxItem>
+            <ComboBoxItem>21</ComboBoxItem>
+            <ComboBoxItem>22</ComboBoxItem>
+            <ComboBoxItem>23</ComboBoxItem>
+
+        </ComboBox>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Right" Height="26.017" Margin="0,0,370.306,198.457" TextWrapping="Wrap" Text=":00 hr" VerticalAlignment="Bottom" Width="71.984" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4"/>
+        <TextBox x:Name="textBox1_Copy" HorizontalAlignment="Left" Margin="330.076,0,0,147.647" TextWrapping="Wrap" Text="CHECK OUT :" Width="79.476" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4" Height="29" VerticalAlignment="Bottom"/>
+        <DatePicker x:Name="checkin_out_date" Margin="414.552,0,370.306,147.647" Height="29" VerticalAlignment="Bottom"/>
+        <ComboBox x:Name="checkin_out_time" Height="26.017" Margin="414.552,0,471.198,100.403" VerticalAlignment="Bottom">
+            <ComboBoxItem>00</ComboBoxItem>
+            <ComboBoxItem>01</ComboBoxItem>
+            <ComboBoxItem>02</ComboBoxItem>
+            <ComboBoxItem>03</ComboBoxItem>
+            <ComboBoxItem>04</ComboBoxItem>
+            <ComboBoxItem>05</ComboBoxItem>
+            <ComboBoxItem>06</ComboBoxItem>
+            <ComboBoxItem>07</ComboBoxItem>
+            <ComboBoxItem>08</ComboBoxItem>
+            <ComboBoxItem>09</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+            <ComboBoxItem>11</ComboBoxItem>
+            <ComboBoxItem>12</ComboBoxItem>
+            <ComboBoxItem>13</ComboBoxItem>
+            <ComboBoxItem>14</ComboBoxItem>
+            <ComboBoxItem>15</ComboBoxItem>
+            <ComboBoxItem>16</ComboBoxItem>
+            <ComboBoxItem>18</ComboBoxItem>
+            <ComboBoxItem>19</ComboBoxItem>
+            <ComboBoxItem>20</ComboBoxItem>
+            <ComboBoxItem>21</ComboBoxItem>
+            <ComboBoxItem>22</ComboBoxItem>
+            <ComboBoxItem>23</ComboBoxItem>
+
+        </ComboBox>
+        <TextBox x:Name="textBox2_Copy" HorizontalAlignment="Right" Height="26.017" Margin="0,0,370.306,100.403" TextWrapping="Wrap" Text=":00 hr" VerticalAlignment="Bottom" Width="71.984" Background="#FFF0EDC4" BorderBrush="#FFF0EDC4"/>
+        <Grid HorizontalAlignment="Right" Margin="0,80.737,27.858,63.406" Width="297" Background="#FFE0DFCC">
+            <ComboBox x:Name="checkin_hname" Height="30" Margin="102,36.263,10,0" VerticalAlignment="Top">
+                <ComboBoxItem>HOTEL Le Castle</ComboBoxItem>
+            </ComboBox>
+            <Image x:Name="image7" HorizontalAlignment="Left" Height="46.5" Margin="27,78.263,0,0" VerticalAlignment="Top" Width="48" Source="icons8-bedroom-filled-100.png"/>
+            <ComboBox x:Name="checkin_rtype" Height="30" Margin="102,94.763,10,0" VerticalAlignment="Top"/>
+            <Image x:Name="image8" HorizontalAlignment="Left" Margin="27,153.263,0,186.812" Width="48" Source="icons8-crowd-filled-100.png"/>
+            <Image x:Name="image6" HorizontalAlignment="Left" Height="43.5" Margin="27,22.763,0,0" VerticalAlignment="Top" Width="48" Source="icons8-hotel-filled-100.png"/>
+            <TextBox x:Name="checkin_person" Margin="102,153.263,5,0" TextWrapping="Wrap" Text="NO.OF PERSON" BorderThickness="0,0,0,1" Background="#FFE0DFCC" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" ToolTip="Enter pin code" Height="29" VerticalAlignment="Top" >
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                        <GradientStop Color="#FF090A03" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <Image x:Name="image9" HorizontalAlignment="Left" Height="46.5" Margin="27,0,0,119.312" VerticalAlignment="Bottom" Width="48" Source="icons8-room-52.png"/>
+            <ComboBox x:Name="checkin_rtype_Copy" Height="30" Margin="102,94.763,10,0" VerticalAlignment="Top">
+                <ComboBoxItem>ROMANTIC DUO DWELL</ComboBoxItem>
+                <ComboBoxItem>QUADRATIC DUPLET CHAMBER</ComboBoxItem>
+                <ComboBoxItem>STAR LOUNGE</ComboBoxItem>
+                <ComboBoxItem>NUCLEAR AREA</ComboBoxItem>
+            </ComboBox>
+            <ComboBox x:Name="checkin_rnum" Height="30" Margin="102,0,91,119.312" VerticalAlignment="Bottom"/>
+            <Image x:Name="image10" HorizontalAlignment="Left" Height="44.048" Margin="27,0,0,70.264" VerticalAlignment="Bottom" Width="48" Source="icons8-receive-cash-filled-100.png"/>
+            <Image x:Name="image11" HorizontalAlignment="Left" Height="40" Margin="27,0,0,10" VerticalAlignment="Bottom" Width="48" Source="icons8-paycheque-filled-100.png"/>
+            <TextBox x:Name="checkin_advance" Margin="102,0,5,70.264" TextWrapping="Wrap" Text="ADVANCE PAID" BorderThickness="0,0,0,1" Background="#FFE0DFCC" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" ToolTip="Enter pin code" Height="29" VerticalAlignment="Bottom" IsKeyboardFocusedChanged="advance_keyfocus" >
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                        <GradientStop Color="#FF090A03" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <TextBox x:Name="checkin_amt" Margin="102,0,5,21" TextWrapping="Wrap" Text="TOTAL AMOUNT" BorderThickness="0,0,0,1" Background="#FFE0DFCC" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" ToolTip="Enter pin code" Height="29" VerticalAlignment="Bottom" IsKeyboardFocusedChanged="amt_keyfocus" >
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                        <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                        <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                        <GradientStop Color="#FF090A03" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+            </TextBox>
+        </Grid>
+        <Button x:Name="checkin_but" Content="Button" Height="61.332" Margin="393.307,0,407.06,10" VerticalAlignment="Bottom" Template="{DynamicResource STANDARD_BUT}"/>
+        <TextBox x:Name="checkin_ph" HorizontalAlignment="Left" Margin="110,107,0,0" TextWrapping="Wrap" Text="PHONE NUMBER" Width="190" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter Phone Number" IsKeyboardFocusedChanged="info_ph_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="checkin_name" HorizontalAlignment="Left" Margin="110,172,0,0" TextWrapping="Wrap" Text="NAME" Width="190" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter name" IsKeyboardFocusedChanged="info_name_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="checkin_state" HorizontalAlignment="Left" Margin="111,0,0,63" TextWrapping="Wrap" Width="190" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Bottom" ToolTip="Enter State name" Text="STATE NAME" IsKeyboardFocusedChanged="info_state_keyfocu" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="checkin_dist" HorizontalAlignment="Left" Margin="110,0,0,154" TextWrapping="Wrap" Text="DISTRICT NAME" Width="190" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Bottom" ToolTip="Enter district name" IsKeyboardFocusedChanged="info_dist_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="checkin_str" HorizontalAlignment="Left" Margin="110,249,0,0" TextWrapping="Wrap" Text="STREET ADDRESS" Width="190" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter street address" IsKeyboardFocusedChanged="info_str_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="checkin_pincode" Margin="0,179,350,0" TextWrapping="Wrap" Text="PIN CODE" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter pin code" HorizontalAlignment="Right" Width="190" IsKeyboardFocusedChanged="info_pincode_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="checkin_country" Margin="0,115,350,0" TextWrapping="Wrap" Text="COUNTRY NAME" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="29" VerticalAlignment="Top" ToolTip="Enter country name" HorizontalAlignment="Right" Width="190" IsKeyboardFocusedChanged="info_country_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+    </Grid>
+</Page>

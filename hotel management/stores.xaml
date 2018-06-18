@@ -1,0 +1,69 @@
+﻿<Page x:Class="hotel_management.stores"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:hotel_management"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1200"
+      Title="stores">
+    <Page.Resources>
+        <ControlTemplate x:Key="pu" TargetType="{x:Type Button}">
+            <Grid>
+                <Image x:Name="image" HorizontalAlignment="Left" Margin="10,10,0,10" Width="63.885" Source="icons8-hotel-filled-100.png"/>
+                <Label x:Name="label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="stckbut" TargetType="{x:Type Button}">
+            <Grid>
+                <Label x:Name="label" Content="PURCHASE &#xD;&#xA;ORDER" Margin="86.333,16.354,10,10" FontSize="20" FontWeight="Bold"/>
+                <Image x:Name="image" HorizontalAlignment="Left" Margin="10,16.354,0,10" Width="71.333" Source="icons8-purchase-order-80.png"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="grnbut" TargetType="{x:Type Button}">
+            <Grid>
+                <Label x:Name="label" Content="GRN" Margin="107.964,26.183,44.291,25.787" FontSize="20" FontWeight="Bold"/>
+                <Image x:Name="image" HorizontalAlignment="Left" Margin="13.667,18.859,0,17.324" Width="64.073" Source="icons8-box-filled-100.png"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="INVOICE" TargetType="{x:Type Button}">
+            <Grid>
+                <Label x:Name="label" Content="INVOICE" Margin="86.333,27.903,10,23.218" FontSize="20" FontWeight="Bold"/>
+                <Image x:Name="image" HorizontalAlignment="Left" Margin="10,10,0,10" Width="61.333" Source="icons8-invoice-filled-100.png"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="purchse" TargetType="{x:Type Button}">
+            <Grid>
+                <Label x:Name="label" Content="PURCHASE " Margin="73.994,22.793,22.339,25.93" FontSize="20" FontWeight="Bold"/>
+                <Image x:Name="image" HorizontalAlignment="Left" Margin="10,10,0,22.793" Width="58.994" Source="icons8-buy-filled-100.png"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="issue" TargetType="{x:Type Button}">
+            <Grid>
+                <Label x:Name="label" Content="ISSUE &#xD;&#xA;REPORT" Margin="86.333,16.354,10,10" FontSize="20" FontWeight="Bold"/>
+                <Image x:Name="image" HorizontalAlignment="Left" Margin="10,16.354,0,10" Width="71.333" Source="icons8-report-card-filled-100.png"/>
+            </Grid>
+        </ControlTemplate>
+    </Page.Resources>
+
+    <Grid Background="#FFF0EDC4">
+        <Grid Height="107.644" VerticalAlignment="Top" Background="Black">
+            <Image x:Name="image" HorizontalAlignment="Left" Margin="59.764,-0.226,0,0" Width="111.832" Source="dream-logo.png"/>
+            <Button x:Name="home" Content="Button" HorizontalAlignment="Right" Height="31.999" Margin="0,10,189.8,0" VerticalAlignment="Top" Width="60.234" Template="{DynamicResource home}" Click="mainpg_call"/>
+            <TextBox x:Name="username_txt" HorizontalAlignment="Right" Margin="0,0,16.064,0" TextWrapping="Wrap" Width="475.913" FontSize="25" Background="Black" Foreground="White" BorderBrush="Black" IsReadOnly="True" Text="Hello, " Height="40.754" VerticalAlignment="Bottom"/>
+            <Button x:Name="LOGOUT_BUT" Content="Button" HorizontalAlignment="Right" Height="31.999" Margin="0,10,255.034,0" VerticalAlignment="Top" Width="118.587" Template="{DynamicResource logout}" RenderTransformOrigin="0.81,0.335" Click="logout"/>
+        </Grid>
+        <Grid Height="58.686" VerticalAlignment="Bottom" Background="Black">
+            <TextBox x:Name="date" HorizontalAlignment="Right" Margin="0,0,68.721,0" TextWrapping="Wrap" Width="296.69" Background="Black" FontSize="28" Foreground="White" BorderBrush="Black" SelectionBrush="Black" IsReadOnly="True"/>
+        </Grid>
+        <StackPanel HorizontalAlignment="Left" Margin="0,107.644,0,58.686" Width="227.416" Background="#FFF1E86E">
+            <Button x:Name="button1" Content="Button" Height="90.822" Template="{DynamicResource stckbut}"/>
+            <Button x:Name="button2" Content="Button" Height="88.57" Template="{DynamicResource grnbut}"/>
+            <Button x:Name="button3" Content="Button" Height="85.57" Template="{DynamicResource INVOICE}"/>
+            <Button x:Name="button4" Content="Button" Height="88.57" Template="{DynamicResource purchse}"/>
+            <Button x:Name="button" Content="Button" Template="{DynamicResource issue}"/>
+        </StackPanel>
+        <Image x:Name="image1" Margin="596.698,259.761,388.717,255.771" Source="dream-logo.png"/>
+
+    </Grid>
+</Page>

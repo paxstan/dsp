@@ -55,6 +55,103 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="add_user.xaml.cs">
+      <DependentUpon>add_user.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="del_user.xaml.cs">
+      <DependentUpon>del_user.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="flash_report.xaml.cs">
+      <DependentUpon>flash_report.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="laundry.xaml.cs">
+      <DependentUpon>laundry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="night_audit.xaml.cs">
+      <DependentUpon>night_audit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="night_audit_con.xaml.cs">
+      <DependentUpon>night_audit_con.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rblock.xaml.cs">
+      <DependentUpon>rblock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="report.xaml.cs">
+      <DependentUpon>report.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="report_kot.xaml.cs">
+      <DependentUpon>report_kot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rmaintain.xaml.cs">
+      <DependentUpon>rmaintain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="roomstatus.xaml.cs">
+      <DependentUpon>roomstatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rrelease.xaml.cs">
+      <DependentUpon>rrelease.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stores.xaml.cs">
+      <DependentUpon>stores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="update.xaml.cs">
+      <DependentUpon>update.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="user.xaml.cs">
+      <DependentUpon>user.xaml</DependentUpon>
+    </Compile>
+    <Page Include="add_user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="cform.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="checkin1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="checkout1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="del_user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="entrypg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="flash_report.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="front desk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="f_b.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="hk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="info1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="kot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="laundry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,12 +160,97 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="cform.xaml.cs">
+      <DependentUpon>cform.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="checkin1.xaml.cs">
+      <DependentUpon>checkin1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="checkout1.xaml.cs">
+      <DependentUpon>checkout1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="entrypg.xaml.cs">
+      <DependentUpon>entrypg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="front desk.xaml.cs">
+      <DependentUpon>front desk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="f_b.xaml.cs">
+      <DependentUpon>f_b.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="hk.xaml.cs">
+      <DependentUpon>hk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="info1.xaml.cs">
+      <DependentUpon>info1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="kot.xaml.cs">
+      <DependentUpon>kot.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="main_pg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="night_audit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="night_audit_con.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="occupancy_front.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rblock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="report.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="report_kot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rmaintain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="roomstatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="rrelease.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="update.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="user.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="main_pg.xaml.cs">
+      <DependentUpon>main_pg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="occupancy_front.xaml.cs">
+      <DependentUpon>occupancy_front.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -94,6 +276,172 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dream-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-front-desk-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dinner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hotel-service %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cart-of-ecommerce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="exam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="add-friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="info %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-hotel-check-in-filled-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-hotel-check-out-filled-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-bed-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-phone-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-user-male-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-address-filled-100.png" />
+    <Resource Include="icons8-country-filled-100.png" />
+    <Resource Include="icons8-museum-filled-100.png" />
+    <Resource Include="icons8-postcode-filled-100.png" />
+    <Resource Include="icons8-street-view-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-open-envelope-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-birthday-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-wedding-day-filled-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-name-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-passport-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-romance-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-hotel-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-bedroom-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-crowd-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-ticket-purchase-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-receive-cash-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-paycheque-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-discount-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-pay-wall-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-room-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-ticket-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-ticket-filled-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-report-card-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-edit-property-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-home-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-bed-filled-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-cancel-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-briefcase-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-info-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-user-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-lock-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-broom-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-ok-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-washing-machine-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-forward-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-back-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-table-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-ingredients-filled-500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-partly-cloudy-day-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-waiter-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-calendar-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-purchase-order-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-box-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-invoice-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-buy-filled-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

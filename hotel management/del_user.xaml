@@ -1,0 +1,44 @@
+﻿<Page x:Class="hotel_management.del_user"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:hotel_management"
+      mc:Ignorable="d" 
+      d:DesignHeight="523.67" d:DesignWidth="969.858"
+      Title="del_user">
+    <Page.Resources>
+        <ControlTemplate x:Key="FETCH" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="Black" Margin="-2.632,0,32.001,10" Stroke="Black" RadiusY="40.485" RadiusX="40.485"/>
+                <Label x:Name="label" Content="FETCH" Margin="31.554,10,32.001,26.926" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="DELETE_BUT" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="Black" Margin="-2.632,0,0,0" Stroke="Black" RadiusY="40.485" RadiusX="40.485"/>
+                <Label x:Name="label" Margin="39.718,10,35.266,15.497" Foreground="White" FontSize="20" FontWeight="Bold" Content="DELETE"/>
+            </Grid>
+        </ControlTemplate>
+    </Page.Resources>
+
+    <Grid Background="#FFF0EDC4">
+        <TextBox x:Name="del_user_user" Margin="250.183,53.14,0,0" TextWrapping="Wrap" Text="USER NAME" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" ToolTip="Enter Name Number" Height="35.531" VerticalAlignment="Top" HorizontalAlignment="Left" Width="227.553" IsKeyboardFocusedChanged="del_user_user_keyfocus" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Image x:Name="image3" HorizontalAlignment="Left" Margin="170.777,40.078,0,0" Width="58.78" Source="icons8-user-96.png" Height="48.593" VerticalAlignment="Top"/>
+        <Grid Margin="124.091,119.192,89.802,105.684" Background="#FFBDBB9F">
+            <TextBlock x:Name="textBlock" Margin="52.247,50.514,53.88,31.124" TextWrapping="Wrap" FontWeight="Bold" FontSize="20" Background="#FFEEE89D"/>
+            <Label x:Name="label" Content="DETAILS" Height="40.514" Margin="300.425,10,326.552,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="28"/>
+        </Grid>
+        <Button x:Name="button" Content="Button" Height="58.39" Margin="403.292,0,400.025,24.491" VerticalAlignment="Bottom" Template="{DynamicResource DELETE_BUT}"/>
+        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Right" Height="74.114" Margin="0,40.078,127.354,0" VerticalAlignment="Top" Width="169.807" Template="{DynamicResource FETCH}"/>
+
+    </Grid>
+</Page>

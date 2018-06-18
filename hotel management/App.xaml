@@ -4,6 +4,30 @@
              xmlns:local="clr-namespace:hotel_management"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <ControlTemplate x:Key="home" TargetType="{x:Type Button}">
+            <Grid>
+                <Image x:Name="image" Height="Auto" Margin="5.25,2.478,5.612,2.681" VerticalAlignment="Stretch" Source="icons8-home-filled-50.png"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="STANDARD_BUT" TargetType="{x:Type Button}">
+            <Grid>
+                <Rectangle Fill="Black" Margin="-2.632,0,0,0" Stroke="Black" RadiusY="40.485" RadiusX="40.485"/>
+                <Label x:Name="label" Content="CHECK IN" Margin="31.554,10,32.001,15.497" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            </Grid>
+        </ControlTemplate>
+        <Style x:Key="headergrid" TargetType="{x:Type Grid}"/>
+        <ControlTemplate x:Key="stack_but" TargetType="{x:Type Button}">
+            <Grid>
+                <Image x:Name="image" HorizontalAlignment="Left" Margin="10,10,0,10" Width="63.885" Source="icons8-hotel-filled-100.png"/>
+                <Label x:Name="label" Content="ROOM STATUS" Margin="93.542,24.874,13.557,23.69" FontWeight="Bold" FontSize="15"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="logout" TargetType="{x:Type Button}">
+            <Grid Margin="19.617,0,17.497,0">
+                <Label x:Name="label" Content="LOGOUT" Margin="4.521,2.018,3.461,2.765" FontWeight="Bold" Foreground="#FFF0EDC4" FontSize="15"/>
+            </Grid>
+        </ControlTemplate>
+
     </Application.Resources>
 </Application>

@@ -1,0 +1,114 @@
+﻿<Page x:Class="hotel_management.night_audit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:hotel_management"
+      mc:Ignorable="d" 
+      d:DesignHeight="480.36" d:DesignWidth="1200"
+      Title="night_audit">
+    <Page.Resources>
+        <ControlTemplate x:Key="leftarrow" TargetType="{x:Type Button}">
+            <Grid>
+                <Image x:Name="image" Margin="0" Source="icons8-forward-filled-100.png"/>
+            </Grid>
+        </ControlTemplate>
+    </Page.Resources>
+
+    <Grid Background="#FFEAE38B">
+        <Rectangle Fill="#FFF0EDC4" HorizontalAlignment="Left" Margin="70.707,30.303,0,29.855" Stroke="Black" Width="494.95"/>
+        <Label x:Name="label" Content="ROOM" HorizontalAlignment="Left" Height="48.485" Margin="258.586,50.505,0,0" VerticalAlignment="Top" Width="94.949" FontWeight="Bold" FontSize="25"/>
+        <Label x:Name="label1" Content="ROOMS OCCUPIED:&#xD;&#xA;(TODAY)" HorizontalAlignment="Left" Height="60.605" Margin="70.707,125.253,0,0" VerticalAlignment="Top" Width="177.778" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="label1_Copy" Content="ROOMS OCCUPIED:&#xA;(TOTAL)" HorizontalAlignment="Left" Margin="70.707,190.858,0,228.897" Width="177.778" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="label2" Content="BLOCKED ROOMS:" HorizontalAlignment="Left" Height="54.648" Margin="70.707,0,0,169.249" VerticalAlignment="Bottom" Width="177.778" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="label2_Copy" Content="DIRTY ROOMS:" HorizontalAlignment="Left" Height="54.648" Margin="70.707,0,0,114.601" VerticalAlignment="Bottom" Width="177.778" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="label2_Copy1" Content="ROOM REVENUE:&#xD;&#xA;(TODAY)" HorizontalAlignment="Left" Height="54.648" Margin="70.707,0,0,59.953" VerticalAlignment="Bottom" Width="177.778" FontWeight="Bold" FontSize="18"/>
+        <Rectangle Fill="#FFF0EDC4" HorizontalAlignment="Right" Margin="0,30.303,92.93,29.855" Stroke="Black" Width="494.95"/>
+        <Label x:Name="label_Copy" Content="F&amp;B" HorizontalAlignment="Right" Height="48.485" Margin="0,50.505,278.789,0" VerticalAlignment="Top" Width="94.949" FontWeight="Bold" FontSize="25"/>
+        <Label x:Name="label1_Copy1" Content="RESTAURANT:&#xA;(TODAY)" HorizontalAlignment="Right" Height="60.605" Margin="0,125.253,410.102,0" VerticalAlignment="Top" Width="177.778" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="label1_Copy2" Content="KOT-RESTAURANT:&#xA;(TODAY)" HorizontalAlignment="Right" Margin="0,190.858,410.102,228.897" Width="177.778" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="label1_Copy3" Content="KOT-ROOM:&#xA;(TODAY)" HorizontalAlignment="Right" Margin="0,0,410.102,163.292" Width="177.778" FontWeight="Bold" FontSize="18" Height="60.605" VerticalAlignment="Bottom"/>
+        <Label x:Name="label1_Copy4" Content="TOTAL F&amp;B REVENUE:" HorizontalAlignment="Right" Margin="0,0,387.88,97.687" Width="200" FontWeight="Bold" FontSize="18" Height="60.605" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="na_room_occto" HorizontalAlignment="Left" Margin="281.51,125.253,0,0" TextWrapping="Wrap" Text="ROOM NUMBERS" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Top" ToolTip="ROOM NUMBERS" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="na_fb_kotres" HorizontalAlignment="Right" Margin="0,193.268,137.18,0" TextWrapping="Wrap" Text="AMONUT" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Top" ToolTip="amount" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="na_fb_res" HorizontalAlignment="Right" Margin="0,136.892,137.18,0" TextWrapping="Wrap" Text="AMOUNT" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Top" ToolTip="amount" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="na_room_revemue" HorizontalAlignment="Left" Margin="281.51,0,0,59.953" TextWrapping="Wrap" Text="TOTAL NUMBER" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Bottom" ToolTip="amount" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="na_room_dirty" HorizontalAlignment="Left" Margin="281.51,0,0,122.761" TextWrapping="Wrap" Text="ROOM NUMBERS" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Bottom" ToolTip="room number" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="na_room_block" HorizontalAlignment="Left" Margin="281.51,0,0,188.366" TextWrapping="Wrap" Text="ROOM NUMBERS" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Bottom" ToolTip="room numbers" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="na_room_occtl" HorizontalAlignment="Left" Margin="281.51,193.268,0,0" TextWrapping="Wrap" Text="ROOM NUMBERS" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Top" ToolTip="room numbers" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="na_fb_revenue" HorizontalAlignment="Right" Margin="0,0,137.18,102.962" TextWrapping="Wrap" Text="AMOUNT" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Bottom" ToolTip="amount" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="na_fb_kotrm" HorizontalAlignment="Right" Margin="0,0,137.18,178.362" TextWrapping="Wrap" Text="AMOUNT" Width="209.593" BorderThickness="0,0,0,1" Background="#FFF0EDC3" Foreground="#FF8D7E7E" ClipToBounds="True" VerticalContentAlignment="Center" FontSize="16" Height="35.531" VerticalAlignment="Bottom" ToolTip="amount" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FF090A03" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+    </Grid>
+</Page>

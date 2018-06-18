@@ -16,17 +16,24 @@ using System.Windows.Shapes;
 namespace hotel_management
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for entrypg.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class entrypg : Page
     {
-        public MainWindow()
+        public static String name; 
+        public entrypg()
         {
             InitializeComponent();
-            main.Content = new entrypg();
             
+           
         }
-        
 
+        private void main_pg_call(object sender, RoutedEventArgs e)
+        {
+            entrypg.name = usernam.Text;
+            NavigationService.Navigate(new Uri("/main_pg.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+       
     }
 }
